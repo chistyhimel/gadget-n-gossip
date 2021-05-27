@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;
 
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
+
   }
 
   hr {
