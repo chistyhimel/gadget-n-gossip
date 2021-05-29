@@ -2,14 +2,16 @@ import React from "react";
 import { Col, Row } from "react-grid-system";
 import { Container } from "../../constants/container";
 import { FooterContainer } from "./Footer.style";
+import logoWhite from "../../assets/icons/logo-white.png";
 
 function Footer() {
   return (
     <>
-      <Container sm>
-        <FooterContainer>
+      <FooterContainer>
+        <Container sm>
           <Row>
-            <Col sm={6} md={3}>
+            <Col xs={6} md={3}>
+              <img src={logoWhite} alt="Gadget & Gossip" />
               <p>Address</p>
               <li>
                 Store & Office Jl. Setrasari Kulon III, No. 10-12, Sukarasa,
@@ -19,10 +21,22 @@ function Footer() {
               <li>Monday - Sunday</li>
               <li>10.00 - 18.00</li>
             </Col>
-            <Col sm={6} md={3}>
-              h
+            <Col xs={6} md={3}>
+              <p>Get in touch</p>
+              <span className="hr" />
+              <li>
+                <div>Phone</div> <div>022-20277564</div>
+              </li>
+              <li>
+                <div>Service Center</div> <div>0811-233-8899</div>
+              </li>
+              <li>
+                <div>Customer Service</div> <div>0811-235-9988</div>
+              </li>
             </Col>
-            <Col sm={6} md={3}>
+            <Col xs={6} md={3}>
+              <p>Useful Link</p>
+              <span className="hr" />
               <li>Warranty & Complaints</li>
               <li>Order & Shipping</li>
               <li>Tracking Order</li>
@@ -31,7 +45,9 @@ function Footer() {
               <li>Terms</li>
               <li>FAQ</li>
             </Col>
-            <Col sm={6} md={3}>
+            <Col xs={6} md={3}>
+              <p>Campaign</p>
+              <span className="hr" />
               <li>Mengenal Arti Cukup</li>
               <li>Tell Your Difference</li>
               <li>Waykambas</li>
@@ -41,8 +57,8 @@ function Footer() {
               <li>Rakai</li>
             </Col>
           </Row>
-        </FooterContainer>
-      </Container>
+        </Container>
+      </FooterContainer>
     </>
   );
 }

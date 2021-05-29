@@ -9,8 +9,8 @@ import SearchBar from "../SearchBar/SearchBar.component";
 
 function Navbar() {
   return (
-    <Container lg>
-      <NavbarContainer>
+    <NavbarContainer>
+      <Container lg>
         <Row nogutter>
           <Col xs={2.5}>
             <NavbarLogo src={logo} alt="Gadget & Gossip" />
@@ -30,8 +30,8 @@ function Navbar() {
             </NavItemsContainer>
           </Col>
         </Row>
-      </NavbarContainer>
-    </Container>
+      </Container>
+    </NavbarContainer>
   );
 }
 

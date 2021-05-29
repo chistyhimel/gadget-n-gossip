@@ -23,10 +23,21 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
-  hr {
-      background-color: #ebebeb;
-      border: 0;
-      height: 1px;
+  h1 {
+    font-family: ${({ theme }) => theme.fonts.primary};
+    position: relative;
+  }
+
+  .hr {
+      &:after{
+        content: "";
+        background-color: ${({ theme }) => theme.colors.textColor};
+        width: 300px;
+        height: 0.5px;
+        display: inline-block;
+        margin-left: 20px;
+     
+      }
     }
 
   a {
