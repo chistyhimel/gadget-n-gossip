@@ -2,10 +2,16 @@ import styled from "styled-components";
 
 export const SearchBarContainer = styled.div`
   height: 100%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 40px;
+
+  @media (max-width: 768px) {
+    width: 100% !important;
+    order: 4;
+    margin: 20px 0;
+  }
 `;
 
 export const InputWrap = styled.div`
@@ -16,9 +22,17 @@ export const InputWrap = styled.div`
   justify-content: space-between;
   height: 50px;
 
+  @media (max-width: 768px) {
+    height: 45px;
+  }
+
   .search__icon {
     width: 3%;
     margin: 0 15px;
+
+    @media (max-width: 768px) {
+      width: 20px;
+    }
   }
 
   input {
@@ -27,6 +41,9 @@ export const InputWrap = styled.div`
     border: none;
     outline: none;
     font-size: 18px;
+    /* @media (max-width: 768px) {
+      width: 80%;
+    } */
   }
 
   button {
@@ -41,6 +58,10 @@ export const InputWrap = styled.div`
     align-items: center;
     justify-content: space-around;
     padding: 8px 0;
+
+    /* @media (max-width: 768px) {
+      width: 10%;
+    } */
 
     div {
       background-color: ${({ theme }) => theme.colors.white};

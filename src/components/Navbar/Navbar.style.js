@@ -7,8 +7,34 @@ export const NavbarContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
+export const NavbarWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  .hamburger__icon {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      order: 2;
+      width: 40px;
+      /* background-color: red; */
+      font-size: 50px;
+      color: ${({ theme }) => theme.colors.primary.deep};
+    }
+    order: 3;
+  }
+`;
+
 export const NavbarLogo = styled.img`
-  width: 100%;
+  width: 20%;
+
+  @media (max-width: 768px) {
+    order: 2;
+    width: 60%;
+  }
 `;
 
 export const NavItemsContainer = styled.div`
@@ -16,6 +42,12 @@ export const NavItemsContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   height: 100%;
+  width: 15%;
+
+  @media (max-width: 768px) {
+    order: 1;
+    width: 40px;
+  }
 
   p {
     font-family: ${({ theme }) => theme.fonts.tertiary};
@@ -23,6 +55,17 @@ export const NavItemsContainer = styled.div`
 
   & > * {
     cursor: pointer;
+  }
+
+  & > :nth-child(1) {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  & > :nth-child(2) {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   & > :last-child {
