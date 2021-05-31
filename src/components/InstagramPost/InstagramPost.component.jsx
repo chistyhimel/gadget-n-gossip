@@ -5,7 +5,14 @@ function InstagramPost() {
   return (
     <>
       <Container lg>
-        <img src={img} alt="" style={{ width: "100%", margin: "80px 0" }} />
+        <Container md>
+          <h1 className="hr">Instagram</h1>
+        </Container>
+        <img
+          src={img}
+          alt=""
+          style={{ width: "100%", margin: " 30px 0 80px 0" }}
+        />
       </Container>
     </>
   );

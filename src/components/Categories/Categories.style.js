@@ -6,21 +6,6 @@ export const CategoriesContainer = styled.div`
   justify-content: center;
   margin: 50px 0;
 
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-
-    img {
-      width: 30px;
-    }
-  }
-
   .slick-slide > div {
     margin: 0 45px;
     @media (max-width: 1200px) {
