@@ -13,11 +13,7 @@ function ProductCard({ product }) {
           </CardCol>
 
           <CardCol xs={12}>
-            <p>
-              {product.title.length > 38
-                ? product.title.substring(0, 38 - 3) + "..."
-                : product.title}
-            </p>
+            <p>{product.title.substring(0, 40) + "..."}</p>
             <small>
               Price: &nbsp;
               <del>৳ 1450</del> &nbsp;

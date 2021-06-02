@@ -27,12 +27,20 @@ export const CardCol = styled(Col)`
   p {
     font-family: ${({ theme }) => theme.fonts.secondary};
     margin: 8px 0;
+
+    @media (max-width: 560px) {
+      font-size: 12px;
+    }
   }
 
   small {
     text-align: right;
     display: block;
     margin-top: 15px;
+
+    @media (max-width: 560px) {
+      font-size: 12px;
+    }
   }
 
   del {

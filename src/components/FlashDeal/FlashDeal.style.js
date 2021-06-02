@@ -6,6 +6,29 @@ export const FlashDealWrapper = styled.div`
   h1 {
     width: fit-content;
   }
+
+  .flash_deal_products {
+    margin: 20px 0;
+  }
+
+  .slick-slide > div {
+    margin: 0 20px;
+    @media (max-width: 1200px) {
+      margin: 0 10px;
+    }
+    @media (max-width: 560px) {
+      margin: 0 5px;
+    }
+  }
+  .slick-list {
+    margin: 0 -20px;
+    @media (max-width: 1200px) {
+      margin: 0 -10px;
+    }
+    @media (max-width: 560px) {
+      margin: 0 -5px;
+    }
+  }
 `;
 
 export const FlashDealCol = styled(Col)`

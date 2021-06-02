@@ -7,8 +7,35 @@ import img2 from "../../assets/flash-deal-images/2.png";
 import img3 from "../../assets/flash-deal-images/3.png";
 import ProductCard from "../ProductCard/ProductCard.component";
 import { productData } from "../../data/product-data";
+import Slider from "react-slick";
 
 function FlashDeal() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Container lg>
@@ -28,13 +55,13 @@ function FlashDeal() {
           </Row>
           <br />
           <br />
-          <Row>
+          <Slider {...settings}>
             {productData.map((product, idx) => (
-              <Col md={2.4}>
+              <div className="flash_deal_products">
                 <ProductCard product={product} />
-              </Col>
+              </div>
             ))}
-          </Row>
+          </Slider>
         </FlashDealWrapper>
       </Container>
     </>

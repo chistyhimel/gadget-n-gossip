@@ -29,11 +29,12 @@ export const NavbarWrap = styled.div`
 `;
 
 export const NavbarLogo = styled.img`
-  width: 20%;
-
+  width: 18%;
+  padding: 10px 0;
   @media (max-width: 768px) {
     order: 2;
     width: 60%;
+    padding: 0;
   }
 `;
 

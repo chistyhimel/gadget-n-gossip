@@ -8,14 +8,13 @@ function SeeMoreButton() {
     <>
       <SeeMoreButtonWrap>
         <Row>
-          <SeeMoreButtonCol xs={5}>
+          <SeeMoreButtonCol xs={3} sm={4} md={5}>
             <div className="underline" />
           </SeeMoreButtonCol>
-          <SeeMoreButtonCol xs={2}>
+          <SeeMoreButtonCol xs={6} sm={4} md={2}>
             <ButtonPrimary outlined>See More</ButtonPrimary>
           </SeeMoreButtonCol>
-          <SeeMoreButtonCol xs={5}>
-            {" "}
+          <SeeMoreButtonCol xs={3} sm={4} md={5}>
             <div className="underline" />
           </SeeMoreButtonCol>
         </Row>
