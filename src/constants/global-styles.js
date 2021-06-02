@@ -26,6 +26,13 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-family: ${({ theme }) => theme.fonts.primary};
     position: relative;
+
+    @media (max-width: 768px) {
+        font-size: 22px;
+      }
+    @media (max-width: 560px) {
+        font-size: 18px;
+      }
   }
 
   .hr {
@@ -36,6 +43,13 @@ const GlobalStyle = createGlobalStyle`
         height: 0.5px;
         display: inline-block;
         margin-left: 20px;
+
+        @media (max-width: 768px) {
+        width: 180px;
+      }
+        @media (max-width: 560px) {
+        width: 80px;
+      }
      
       }
     }

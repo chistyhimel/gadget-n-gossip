@@ -38,12 +38,24 @@ export const CategroyCard = styled.div`
     justify-content: center;
 
     img {
-      width: 90px;
+      width: 80px;
       margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        width: 50px;
+      }
+      @media (max-width: 350px) {
+        width: 40px;
+      }
     }
 
     p {
       font-family: "Lato", sans-serif;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 `;

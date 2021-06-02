@@ -16,4 +16,11 @@ export const StickyTotalWrap = styled.div`
   justify-content: center;
   text-align: center;
   font-size: 14px;
+  border: 0.5px solid #f0f2f5;
+
+  @media (max-width: 768px) {
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+  }
 `;

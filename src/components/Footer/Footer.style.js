@@ -18,7 +18,7 @@ export const FooterContainer = styled.div`
     }
   }
 
-  .hr {
+  .underline {
     background-color: ${({ theme }) => theme.colors.white};
     display: block;
     width: 50px;

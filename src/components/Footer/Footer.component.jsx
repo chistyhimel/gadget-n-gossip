@@ -23,7 +23,7 @@ function Footer() {
             </Col>
             <Col xs={6} md={3}>
               <p>Get in touch</p>
-              <span className="hr" />
+              <span className="underline" />
               <li>
                 <div>Phone</div> <div>022-20277564</div>
               </li>
@@ -36,7 +36,7 @@ function Footer() {
             </Col>
             <Col xs={6} md={3}>
               <p>Useful Link</p>
-              <span className="hr" />
+              <span className="underline" />
               <li>Warranty & Complaints</li>
               <li>Order & Shipping</li>
               <li>Tracking Order</li>
@@ -47,7 +47,7 @@ function Footer() {
             </Col>
             <Col xs={6} md={3}>
               <p>Campaign</p>
-              <span className="hr" />
+              <span className="underline" />
               <li>Mengenal Arti Cukup</li>
               <li>Tell Your Difference</li>
               <li>Waykambas</li>
