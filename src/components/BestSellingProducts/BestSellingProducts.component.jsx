@@ -54,15 +54,13 @@ function BestSellingProducts() {
           <Arrows left goto={gotoPrev} />
           <Container md>
             <h1 className="hr">Best Selling Products</h1>
-            <Fade bottom cascade>
-              <Slider {...settings} ref={sliderRef}>
-                {productData.map((product, idx) => (
-                  <div className="best__selling_products">
-                    <ProductCard product={product} />
-                  </div>
-                ))}
-              </Slider>
-            </Fade>
+            <Slider {...settings} ref={sliderRef}>
+              {productData.map((product, idx) => (
+                <div className="best__selling_products">
+                  <ProductCard product={product} />
+                </div>
+              ))}
+            </Slider>
           </Container>
           <Arrows right goto={gotoNext} />
         </BestSellingProductsWrap>
