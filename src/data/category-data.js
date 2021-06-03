@@ -10,33 +10,41 @@ export const categoryData = [
   {
     titile: "Earbud",
     img: earbudsImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Charger",
     img: cableImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Earphone",
     img: earphoneImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Mobile",
     img: mobileImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Laptop",
     img: laptopImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Smart Watch",
     img: watchImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Cable",
     img: cableImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
   {
     titile: "Earphone",
     img: earphoneImg,
+    products: ["haka", "kaka", "saka", "naka"],
   },
 ];
