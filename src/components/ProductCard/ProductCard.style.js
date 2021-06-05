@@ -6,7 +6,7 @@ export const CardWrap = styled.div`
   padding: 12px 10px;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0px 0px 2px #000000;
+  box-shadow: ${({ outlined }) => (outlined ? "0px 0px 2px #000000" : "")};
   .card__img__wrapper {
     overflow: hidden;
     img {

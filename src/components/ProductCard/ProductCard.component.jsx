@@ -4,11 +4,11 @@ import img from "../../assets/product-images/earphone.png";
 import { Row } from "react-grid-system";
 import Fade from "react-reveal/Fade";
 
-function ProductCard({ product }) {
+function ProductCard({ product, outlined }) {
   return (
     <>
       <Fade bottom cascade>
-        <CardWrap>
+        <CardWrap className="product__card__wrap" outlined={outlined}>
           <Row>
             <CardCol xs={12} className="card__img__wrapper">
               <img src={product.img} alt="" />

@@ -58,7 +58,7 @@ function FlashDeal() {
           <Slider {...settings}>
             {productData.map((product, idx) => (
               <div className="flash_deal_products">
-                <ProductCard product={product} />
+                <ProductCard product={product} outlined />
               </div>
             ))}
           </Slider>

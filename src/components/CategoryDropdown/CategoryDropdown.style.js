@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const DropdownWrap = styled.div`
-  width: 200px;
   margin: 20px 0;
 `;
 

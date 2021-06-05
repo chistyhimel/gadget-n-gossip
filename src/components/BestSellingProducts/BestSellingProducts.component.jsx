@@ -56,8 +56,8 @@ function BestSellingProducts() {
             <h1 className="hr">Best Selling Products</h1>
             <Slider {...settings} ref={sliderRef}>
               {productData.map((product, idx) => (
-                <div className="best__selling_products">
-                  <ProductCard product={product} />
+                <div className="best__selling_products" key={idx}>
+                  <ProductCard product={product} outlined />
                 </div>
               ))}
             </Slider>

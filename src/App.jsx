@@ -5,6 +5,11 @@ import Navbar from "./components/Navbar/Navbar.component";
 import StickyTotal from "./components/StickyTotal/StickyTotal.component";
 import Home from "./pages/Home.page";
 import Products from "./pages/Products.page";
+import AdSection from "./components/AdSection/AdSection.component";
+import BestSellingProducts from "./components/BestSellingProducts/BestSellingProducts.component";
+import SocialMediaSection from "./components/SocialMediaSection/SocialMediaSection.component";
+import InstagramPost from "./components/InstagramPost/InstagramPost.component";
+import PaymentOptions from "./components/PaymentOptions/PaymentOptions.component";
 
 function App() {
   return (
@@ -17,6 +22,11 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
         </Switch>
+        <AdSection />
+        <BestSellingProducts />
+        <SocialMediaSection />
+        <InstagramPost />
+        <PaymentOptions />
         <Footer />
       </Router>
     </>

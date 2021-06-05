@@ -5,6 +5,7 @@ export const NavbarContainer = styled.div`
   top: 0;
   z-index: 10;
   background-color: ${({ theme }) => theme.colors.white};
+  border-bottom: 1px solid #ebebeb;
 `;
 
 export const NavbarWrap = styled.div`
