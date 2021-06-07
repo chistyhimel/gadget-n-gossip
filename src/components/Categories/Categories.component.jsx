@@ -8,9 +8,11 @@ import leftArrow from "../../assets/icons/arrow-left.png";
 import rightArrow from "../../assets/icons/arrow-right.png";
 import { categoryData } from "../../data/category-data";
 import Arrows from "../Arrows/Arrows.component";
+import { useHistory } from "react-router";
 
 function Categories() {
   const sliderRef = useRef();
+  const history = useHistory();
 
   const settings = {
     dots: false,
@@ -54,7 +56,7 @@ function Categories() {
             <Slider {...settings} ref={sliderRef}>
               {categoryData.map((pd, idx) => (
                 <CategroyCard key={idx}>
-                  <div>
+                  <div onClick={() => history.push("/products")}>
                     <img src={pd.img} alt="" />
                     <p>{pd.titile}</p>
                   </div>
