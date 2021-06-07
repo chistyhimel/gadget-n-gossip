@@ -10,6 +10,7 @@ import BestSellingProducts from "./components/BestSellingProducts/BestSellingPro
 import SocialMediaSection from "./components/SocialMediaSection/SocialMediaSection.component";
 import InstagramPost from "./components/InstagramPost/InstagramPost.component";
 import PaymentOptions from "./components/PaymentOptions/PaymentOptions.component";
+import ProductDetails from "./pages/ProductDetails.page";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
+          <Route exact path="/product" component={ProductDetails} />
         </Switch>
         <AdSection />
         <BestSellingProducts />
