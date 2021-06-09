@@ -3,10 +3,18 @@ import { Col, Row } from "react-grid-system";
 import { Link } from "react-router-dom";
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { Container } from "../../constants/container";
-import { ProductDetailsMainWrap } from "./ProductDetailsMain.style";
+import {
+  CategoryImgWrap,
+  ImageGalleryWrap,
+  ProductDetailsMainWrap,
+} from "./ProductDetailsMain.style";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import img from "../../assets/images/img.png";
+import ImageMagnify from "./ImageMagnify.component";
+import { categoryData } from "../../data/category-data";
+import Breadcrumbs from "./Breadcrumbs.component";
+import ProductInfo from "./ProductInfo.component";
 
 const images = [
   {
@@ -24,22 +32,39 @@ const images = [
 ];
 
 function ProductDetailsMain() {
-  const breadcrumbs = useBreadcrumbs();
-
   return (
     <>
       <ProductDetailsMainWrap>
         <Container lg>
           <Row>
-            <Col xs={6}>
-              <ImageGallery
-                items={images}
-                thumbnailPosition={"left"}
-                showPlayButton={false}
-                useBrowserFullscreen={false}
-              />
+            <Col xs={1.4}>
+              <CategoryImgWrap>
+                {categoryData.map((category, idx) => (
+                  <img src={category.img} alt="" key={idx} />
+                ))}
+              </CategoryImgWrap>
             </Col>
-            <Col xs={6}></Col>
+
+            <Col xs={10.6}>
+              <Breadcrumbs />
+              <Row nogutter>
+                <Col xs={6}>
+                  <ImageGalleryWrap>
+                    <ImageGallery
+                      items={images}
+                      thumbnailPosition={"left"}
+                      showPlayButton={false}
+                      useBrowserFullscreen={false}
+                      renderItem={ImageMagnify}
+                    />
+                  </ImageGalleryWrap>
+                </Col>
+                <Col xs={6}>
+                  <div id="myPortal" />
+                  <ProductInfo />
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </Container>
       </ProductDetailsMainWrap>
